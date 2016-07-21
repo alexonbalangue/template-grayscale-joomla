@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="template" client="site" method="upgrade">
+	<name>grayscaledefault</name>
+	<version>1.1</version>
+	<creationDate>14 octobre 2015</creationDate>
+	<author>Alexon Balangue</author>
+	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
+	<copyright>Copyright (C) 2012 - 2015. All rights reserved.</copyright>
+	<description>grayscale themes home</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>favicon.ico</filename>
+		<folder>libs</folder>
+		<folder>html</folder>
+	</files>
+	<positions>
+		<position>grayscale_menu</position>
+      <position>grayscale_service</position>
+		<position>reference</position>
+		<position>debug</position>
+		<position>grayscale_information</position>
+		<position>grayscale_search</position>
+		<position>grayscale_contribute</position>
+		<position>grayscale_confiances</position>
+      <position>banner-header</position>
+            <position>banner-footer</position>
+      <position>banner-mheader</position>
+            <position>banner-mfooter</position>
+		<position>grayscale_consumer</position>
+		<position>grayscale_translator</position>
+		<position>grayscale_team</position>
+		<position>grayscale_footer-1</position>
+		<position>grayscale_footer-2</position>
+		<position>grayscale_footer-3</position>
+		<position>grayscale_footer-4</position>
+      <position>grayscale_helpsupport</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">				
+				<field name="myphoto" class="" type="media" default=""
+					label="logo" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited by Alexon Balangue Template">http://www.alexonbalangue.me/index.php?option=com_ars&amp;view=update&amp;task=all&amp;format=xml</server>
+		<server type="extension" priority="2" name="TPL - grayscale">http://www.alexonbalangue.me/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=5</server>
+	</updateservers>
+</extension>
