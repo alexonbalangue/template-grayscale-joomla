@@ -1,4 +1,10 @@
-<?php defined('_JEXEC') or die;$apps             = JFactory::getApplication();$docs             = JFactory::getDocument();$this->language  = $docs->language;$this->direction = $docs->direction;// Getting params from template$params = $apps->getTemplate(true)->params;$sitename = $apps->getCfg('sitename');?><!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<?php defined('_JEXEC') or die;$apps             = JFactory::getApplication();$docs             = JFactory::getDocument();$this->language  = $docs->language;$this->direction = $docs->direction;/* Getting params from template*/$params = $apps->getTemplate(true)->params;$sitename = $apps->getCfg('sitename');
+# If you use Analyrics intern - Piwik | With plugin https://www.yireo.com/software/joomla-extensions/piwik
+#include_once JPATH_SITE . '/plugins/system/piwik/piwik.php';
+#if (class_exists('PlgSystemPiwik')) {
+#    PlgSystemPiwik::callPiwik();
+#}
+?><!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
